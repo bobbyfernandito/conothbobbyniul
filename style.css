@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5em;
+  color: #b76e79;
+  margin-bottom: 10px;
+}
+
+.names {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.guest h2 {
+  font-size: 1.5em;
+  color: #444;
+}
+
+.details p {
+  margin: 10px 0;
+}
+
+.thanks {
+  margin-top: 30px;
+  font-style: italic;
+  color: #555;
+}
