@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan Bobby & Niah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">Undangan Pernikahan</h1>
+    <p class="names">Bobby & Niah</p>
+
+    <div class="guest">
+      <p>Kepada Yth.</p>
+      <h2 id="guest-name">Tamu Undangan</h2>
+    </div>
+
+    <div class="details">
+      <p><strong>Tanggal:</strong> Sabtu, 14 Juni 2025</p>
+      <p><strong>Lokasi:</strong> Gedung Serbaguna Citra</p>
+    </div>
+
+    <p class="thanks">Merupakan kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const guest = params.get("to");
+    if (guest) {
+      document.getElementById("guest-name").textContent = guest.replace(/\+/g, " ");
+    }
+  </script>
+
+</body>
+</html>
